@@ -1,0 +1,235 @@
+/*ESTILOS GENERALES*/
+
+#cajita{
+    width: 1200px;
+    height: 3000px;
+    padding: 20px;
+    margin: auto;
+    background-color:floralwhite;
+    border-radius: 20px;
+}
+body{
+    background-color: #790400;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    font-family: "Urbanist", sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "Freeman", sans-serif;
+    background-color:#c71610;
+    color: floralwhite;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 15px;
+    transition: 1s;
+}
+nav a:hover{
+    background-color: rgb(255, 187, 0);
+    padding: 20px;
+    transition: 1s;
+}
+
+h1,h2,h3 {
+    familia de fuentes: "Titan One", sans-serif;
+    color: #c71619;
+
+}
+
+p{
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+
+footer{
+    background-color: #710400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+
+.texto_blanco{
+    color: white;
+    font-family: "Urbanist", sans-serif;
+}
+
+.activo{
+
+background-color: darkorange;
+}
+
+.tituloprincipal{
+    text-align: center;
+    border-top:2px solid #af0d08;
+    border-bottom: 2px solid #9f0b06;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+
+table{
+    width: 700px;
+    border-collapse: collapse;
+}
+table,tr,td,th{
+    border: 3px solid #660704;
+    padding: 8px;
+    font-family: "Urbanist", sans-serif;
+}
+
+th{
+    background-color: #900c07;
+    color: white;
+}
+
+tr:hover{
+    background-color: #ddd;
+}
+
+
+/*ESTILOS DEL INDEX*/
+#bienvenidos{
+    text-align: center;
+}
+
+#pedidas{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#pedidas article{
+    width: 30%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#pedidas article img{
+    width: 100%;
+}
+
+#nuevos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nuevos article{
+    width: 45%;
+    text-align: center;
+}
+
+#nuevos article img{
+    width: 100%;
+}
+
+/*ESTILOS DE CONTACTOS*/
+
+input{
+    width: 200px;
+    height: 25px;
+}
+input:focus{
+    border: 2px solid #850c08;
+    background-color: hsl(3, 100%, 96%);
+}
+input[type=button]{
+    width: 100px;
+}
+
+#contactos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+@keyframes rotacion{
+    from{/*tambien puede ser 0%*/
+        rotate: 0deg;
+    }
+    to{/*tambien puede ser 100%*/
+        rotate: 360deg;
+    }
+
+}
+
+.anima1{
+    animation-name: rotacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes traslacion{
+    0%{
+        translate: 0px 0px;
+    }
+    50%{
+        translate: 30px 20px;
+    }
+    100%{
+        translate: 0px 0px;
+    }
+
+}
+
+.anima2{
+    animation-name: rotacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes traslacion{
+    0%{
+        scale: 1; /*tambien se puede usar %*/
+    }
+    0%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.anima3{
+    /*animation-name: rotacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+
+    animation:escala 3s infinite linear;
+}
+
+@keyframes ejercicio{
+    0%{
+        background-color: transparent;
+    }
+    33%{
+        background-color:#c71610 ;
+        color:#ddd;
+    }
+    66%{
+        background-color: darkorange;
+        color:#ffffff00;
+    }
+    100%{
+    }
+}
+
+.ejercicio{
+    animation: ejercicio 2s infinite linear;
+}
